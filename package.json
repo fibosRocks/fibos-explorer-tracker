@@ -1,7 +1,7 @@
 {
-	"name": "fibos-tracker",
+	"name": "fibos-explorer-tracker",
 	"main": "./lib/",
-	"version": "1.4.1",
+	"version": "1.4.2",
 	"description": "a tracking data and api service based on FIBOS/EOS blockchain nodes.",
 	"scripts": {
 		"test": "fibos test",
@@ -9,7 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/FIBOSIO/fibos-tracker"
+		"url": "https://github.com/fibosRocks/fibos-explorer-tracker"
 	},
 	"keywords": [
 		"fibos"
