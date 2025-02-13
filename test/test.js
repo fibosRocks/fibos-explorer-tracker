@@ -4,7 +4,7 @@ const http = require("http");
 const Tracker = require("../");
 const fs = require("fs");
 
-const fibos = require("fibos");
+const fibos = require("chain");
 
 const config = {
 	"config_dir": "./blockData/data",
@@ -19,6 +19,7 @@ const config = {
 	"DBconnString": "mysql://root:123456@127.0.0.1/fibos_mainnet"
 };
 
+fibos.pubkey_prefix = "FO";
 fibos.config_dir = config.config_dir;
 fibos.data_dir = config.data_dir;
 
