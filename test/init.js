@@ -1,6 +1,6 @@
 "use strict";
 const http = require("http");
-const fibos = require("fibos");
+const fibos = require("chain");
 const Tracker = require("../");
 const mock_db = require("./mock_db.json");
 
@@ -33,4 +33,4 @@ let httpServer = new http.Server(port, [
 ]);
 
 httpServer.crossDomain = true;
-httpServer.asyncRun();
+httpServer.start();

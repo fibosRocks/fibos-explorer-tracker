@@ -24,10 +24,9 @@ describe("blocks case", () => {
 					updatedAt
 				}
 			}`).json();
-
-		assert.equal(r.data.find_blocks.length, 1);
-		assert.equal(r.data.find_blocks[0].id, id);
-		assert.equal(r.data.find_blocks[0].block_num, 7);
-		assert.equal(r.data.find_blocks[0].status, "reversible");
+		assert.equal(r.data.find_fibos_blocks.length, 1);
+		assert.equal(r.data.find_fibos_blocks[0].id, id);
+		assert.equal(r.data.find_fibos_blocks[0].block_num, 7);
+		assert.equal(r.data.find_fibos_blocks[0].status, "pending");
 	});
 });
