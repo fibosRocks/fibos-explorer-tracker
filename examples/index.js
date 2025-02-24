@@ -35,7 +35,7 @@ let setLogs = (logPath) => {
 setLogs("./logs/");
 
 // [fibos]
-const fibos = require("fibos");
+const fibos = require("chian");
 fibos.config_dir = "./data";
 fibos.data_dir = "./data";
 fibos.load("http", {
