@@ -19,11 +19,11 @@ describe("transactions case", () => {
 				updatedAt
 			}
 		}`).json();
-		assert.equal(r.data.transactions.id, id);
-		assert.equal(r.data.transactions.trx_id, "e3630fe0f0082de9fcbf639ae447f41ccd61f27ec650e1f18939fad93c59323f");
-		assert.equal(r.data.transactions.producer_block_id, "00000007424f34aeec0277755004ac9a8462ed0a9087bbd12de4ba68d76d9e10");
-		assert.equal(r.data.transactions.rawData.action_traces.length, 1);
-		assert.equal(r.data.transactions.rawData.block_num, 7);
-		assert.equal(r.data.transactions.rawData.id, "e3630fe0f0082de9fcbf639ae447f41ccd61f27ec650e1f18939fad93c59323f");
+		assert.equal(r.data.fibos_transactions.id, id);
+		assert.equal(r.data.fibos_transactions.trx_id, "e3630fe0f0082de9fcbf639ae447f41ccd61f27ec650e1f18939fad93c59323f");
+		assert.equal(r.data.fibos_transactions.producer_block_id, "00000007424f34aeec0277755004ac9a8462ed0a9087bbd12de4ba68d76d9e10");
+		assert.equal(r.data.fibos_transactions.rawData.action_traces.length, 1);
+		assert.equal(r.data.fibos_transactions.rawData.block_num, 7);
+		assert.equal(r.data.fibos_transactions.rawData.id, "e3630fe0f0082de9fcbf639ae447f41ccd61f27ec650e1f18939fad93c59323f");
 	});
 });
